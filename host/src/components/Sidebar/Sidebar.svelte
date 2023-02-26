@@ -2,6 +2,7 @@
 	import Home from '../icons/Home.svelte';
 	import Library from '../icons/Library.svelte';
 	import Search from '../Icons/Search.svelte';
+	import logo from '../../assets/spotify-logo.png';
 
 	const menus = [
 		{
@@ -24,7 +25,7 @@
 
 <nav class="bg-black w-64 h-screen fixed">
 	<div class="pl-8 pt-6">
-		<img src="/public/spotify-logo.png" class="h-10" alt="spotify-logo" />
+		<img src={logo} class="h-10" alt="spotify-logo" />
 		<ul class="mt-8">
 			{#each menus as menu}
 				<li class="mt-6">
