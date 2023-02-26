@@ -1,10 +1,12 @@
-import "./app.postcss";
-import { initFederation } from "@softarc/native-federation";
+import './app.postcss';
+import { initFederation } from '@softarc/native-federation';
 
 (async () => {
-  await initFederation({
-    remote: "http://localhost:4174/remoteEntry.json",
-  });
+	const response = await fetch('/mfes-config.json');
+  const mfesConfig = await response.json();
+  console.log('CONFIG:', mfesConfig);
+  
+	await initFederation(mfesConfig);
 
-  await import("./bootstrap");
+	await import('./bootstrap');
 })();

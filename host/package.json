@@ -10,21 +10,21 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json"
 	},
 	"devDependencies": {
-		"@gioboa/vite-module-federation": "^0.2.0",
-		"@softarc/native-federation": "^1.0.0-beta.2",
-		"@softarc/native-federation-esbuild": "^1.0.0-beta.2",
-		"@sveltejs/vite-plugin-svelte": "^1.0.2",
+		"@gioboa/vite-module-federation": "^0.2.6",
+		"@softarc/native-federation": "^1.1.1",
+		"@softarc/native-federation-esbuild": "^1.1.1",
+		"@sveltejs/vite-plugin-svelte": "^2.0.3",
 		"@tsconfig/svelte": "^3.0.0",
-		"autoprefixer": "^10.4.7",
-		"esbuild": "^0.15.7",
-		"postcss": "^8.4.14",
+		"autoprefixer": "^10.4.13",
+		"esbuild": "^0.17.10",
+		"postcss": "^8.4.21",
 		"postcss-load-config": "^4.0.1",
-		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.1",
-		"svelte-preprocess": "^4.10.7",
-		"tailwindcss": "^3.1.5",
-		"tslib": "^2.4.0",
-		"typescript": "^4.6.4",
-		"vite": "^3.1.0"
+		"svelte": "^3.55.1",
+		"svelte-check": "^3.0.4",
+		"svelte-preprocess": "^5.0.1",
+		"tailwindcss": "^3.2.7",
+		"tslib": "^2.5.0",
+		"typescript": "^4.9.5",
+		"vite": "^4.1.4"
 	}
 }
