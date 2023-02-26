@@ -14,19 +14,22 @@
 	],
 	"scripts": {
 		"install:deps": "npm --prefix ./host install && npm --prefix ./remote install",
-		"serve:host": "npm --prefix ./host run dev",
-		"serve:remote": "npm --prefix ./remote run dev",
-		"serve:host:preview": "npm --prefix ./host run build && npm --prefix ./host run preview",
-		"serve:remote:preview": "npm --prefix ./remote run build && npm --prefix ./remote run preview",
+		"dev:host": "npm --prefix ./host run dev",
+		"dev:remote": "npm --prefix ./remote run dev",
+		"dev": "run-p dev:*",
 		"build:host": "npm --prefix ./host run build",
 		"build:remote": "npm --prefix ./remote run build",
-		"serve:host:dist": "npx serve host/dist -l 5173",
-		"serve:remote:dist": "npx serve remote/dist -l 4173 --cors"
+		"preview:host": "npm --prefix ./host run build && npm --prefix ./host run preview",
+		"preview:remote": "npm --prefix ./remote run build && npm --prefix ./remote run preview",
+		"preview": "run-p preview:*"
 	},
 	"author": {
 		"name": "Giorgio Boa",
 		"email": "giorgiob.boa@gmail.com",
 		"url": "https://github.com/gioboa"
 	},
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"npm-run-all": "^4.1.5"
+	}
 }
