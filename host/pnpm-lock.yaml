@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fortawesome/free-solid-svg-icons': ^6.2.0
   '@gioboa/vite-module-federation': ^0.2.0
   '@softarc/native-federation': ^1.0.0-beta.2
   '@softarc/native-federation-esbuild': ^1.0.0-beta.2
@@ -9,10 +8,8 @@ specifiers:
   '@tsconfig/svelte': ^3.0.0
   autoprefixer: ^10.4.7
   esbuild: ^0.15.7
-  fa-svelte: ^3.1.0
   postcss: ^8.4.14
   postcss-load-config: ^4.0.1
-  rxjs: ^7.5.6
   svelte: ^3.49.0
   svelte-check: ^2.8.1
   svelte-preprocess: ^4.10.7
@@ -20,11 +17,6 @@ specifiers:
   tslib: ^2.4.0
   typescript: ^4.6.4
   vite: ^3.1.0
-
-dependencies:
-  '@fortawesome/free-solid-svg-icons': 6.3.0
-  fa-svelte: 3.1.0
-  rxjs: 7.8.0
 
 devDependencies:
   '@gioboa/vite-module-federation': 0.2.6_3eka4353hoamgqfmejcwspqcxu
@@ -63,20 +55,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@fortawesome/fontawesome-common-types/6.3.0:
-    resolution: {integrity: sha512-4BC1NMoacEBzSXRwKjZ/X/gmnbp/HU5Qqat7E8xqorUtBFZS+bwfGH5/wqOC2K6GV0rgEobp3OjGRMa5fK9pFg==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: false
-
-  /@fortawesome/free-solid-svg-icons/6.3.0:
-    resolution: {integrity: sha512-x5tMwzF2lTH8pyv8yeZRodItP2IVlzzmBuD1M7BjawWgg9XAvktqJJ91Qjgoaf8qJpHQ8FEU9VxRfOkLhh86QA==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dependencies:
-      '@fortawesome/fontawesome-common-types': 6.3.0
-    dev: false
 
   /@gioboa/vite-module-federation/0.2.6_3eka4353hoamgqfmejcwspqcxu:
     resolution: {integrity: sha512-Bj+14Qk8YcTf53Rk+74KMyQ9iihRqKNqgxdv60wtwpHroEi5+ldvKHxxN3ZfD0SAyG4MscCNV/NwYWlfUgv4Sg==}
@@ -711,10 +689,6 @@ packages:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: true
 
-  /fa-svelte/3.1.0:
-    resolution: {integrity: sha512-RqBOWwt7sc+ta9GFjbu5GOwKFRzn3rMPPSqvSGpIwsfVnpMjiI5ttv84lwNsCMEYI6/lu/iH21HUcE3TLz8RGQ==}
-    dev: false
-
   /fast-glob/3.2.12:
     resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
     engines: {node: '>=8.6.0'}
@@ -1230,12 +1204,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs/7.8.0:
-    resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
-    dependencies:
-      tslib: 2.5.0
-    dev: false
-
   /sade/1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -1456,6 +1424,7 @@ packages:
 
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+    dev: true
 
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
