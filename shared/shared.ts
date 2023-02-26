@@ -1,3 +1,1 @@
-export const state = {
-    message: '<no message>'
-}
+export const NEXT_SONG_EVENT = 'next-song';

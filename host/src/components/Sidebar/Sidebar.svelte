@@ -24,7 +24,7 @@
 
 <nav class="bg-black w-64 h-screen fixed">
 	<div class="pl-8 pt-6">
-		<img src="/public/spotify-logo.png" class="h-10" alt="spotify-logo" />
+		<img src="/spotify-logo.png" class="h-10" alt="spotify-logo" />
 		<ul class="mt-8">
 			{#each menus as menu}
 				<li class="mt-6">

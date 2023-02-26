@@ -3,12 +3,24 @@
 	import Sidebar from './components/Sidebar/Sidebar.svelte';
 	import { loadRemoteModule } from '@softarc/native-federation';
 	import { musics } from './mocks/musics';
+	import { onMount } from 'svelte';
+	import { NEXT_SONG_EVENT } from 'shared';
 
 	let remoteAppTarget;
 	(async () => {
 		const app = await loadRemoteModule('remote', './remote-mediaplayer');
 		new app.default({ target: remoteAppTarget });
 	})();
+
+	let activeIndex = 0;
+	const onNextSong = () => (activeIndex = activeIndex + 1);
+	onMount(function () {
+		window.addEventListener(NEXT_SONG_EVENT, onNextSong);
+
+		return () => {
+			window.removeEventListener(NEXT_SONG_EVENT, onNextSong);
+		};
+	});
 </script>
 
 <div class="flex">
@@ -36,9 +48,10 @@
 						<div
 							class="grid gap-5 grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 mt-6"
 						>
-							{#each items as { image, name, publisher }}
+							{#each items as { image, name, publisher }, index}
 								<div
 									class="p-5 bg-[#181818] hover:bg-dark-3 shadow-sm shadow-black rounded-lg w-auto cursor-pointer"
+									class:shadow-gray-300={index === activeIndex}
 								>
 									<img src={image} alt="card-img" />
 									<div

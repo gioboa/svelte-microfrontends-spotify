@@ -1,3 +1,7 @@
+<script>
+	import { NEXT_SONG_EVENT } from '../../shared/shared';
+</script>
+
 <div
 	class="flex h-24 w-full bg-dark border-t border-t-dark-3 fixed bottom-0 left-0"
 >
@@ -66,6 +70,10 @@
 				aria-hidden="true"
 				role="img"
 				xmlns="http://www.w3.org/2000/svg"
+				on:click={() => {
+					const customEvent = new CustomEvent(NEXT_SONG_EVENT);
+					window.dispatchEvent(customEvent);
+				}}
 				><g transform="translate(160 256)"
 					><g transform="translate(0,0) scale(1,1)"
 						><path
