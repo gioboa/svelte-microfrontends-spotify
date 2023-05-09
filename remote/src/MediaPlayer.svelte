@@ -1,5 +1,6 @@
 <script>
 	import { NEXT_SONG_EVENT } from '../../shared/shared';
+	import { BehaviorSubject } from 'rxjs';
 </script>
 
 <div

@@ -5,6 +5,7 @@
 	import { musics } from './mocks/musics';
 	import { onMount } from 'svelte';
 	import { NEXT_SONG_EVENT } from 'shared';
+	import { BehaviorSubject } from 'rxjs';
 
 	let remoteAppTarget;
 	(async () => {
