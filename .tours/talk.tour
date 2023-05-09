@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "talk",
+  "steps": [
+    {
+      "file": "package.json",
+      "description": "root scripts",
+      "line": 19
+    },
+    {
+      "file": "remote/package.json",
+      "description": "library",
+      "line": 13
+    },
+    {
+      "file": "remote/package.json",
+      "description": "external deps",
+      "line": 31
+    },
+    {
+      "file": "remote/module-federation/federation.config.cjs",
+      "description": "exposing mfe",
+      "line": 8
+    },
+    {
+      "file": "remote/module-federation/federation.config.cjs",
+      "description": "shared deps",
+      "line": 12
+    },
+    {
+      "file": "host/vite.config.ts",
+      "description": "vite configuration - mix and match webpack",
+      "line": 13
+    },
+    {
+      "file": "host/module-federation/federation.config.cjs",
+      "description": "host config",
+      "line": 7
+    },
+    {
+      "file": "host/module-federation/esbuild-svelte-plugin.js",
+      "description": "digest svelte cmp",
+      "line": 7
+    },
+    {
+      "file": "host/src/App.svelte",
+      "description": "loading Svelte mfe",
+      "line": 11
+    }
+  ]
+}
